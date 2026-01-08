@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import photo from '../images/2A7A1024.jpg';
+const photo = new URL('../images/2A7A1024.jpg', import.meta.url).href;
 
 export function Hero() {
   return (
