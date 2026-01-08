@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import photo from '@/images/2A7A1024.jpg';
 
 export function Hero() {
   return (
@@ -125,11 +126,11 @@ export function Hero() {
               {/* Main Image Container */}
               <div className="relative z-10 group">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm border-4 border-background/50 shadow-2xl">
-                  <ImageWithFallback
-                    src="/images/2A7A1024.jpg"
-                    alt="Paul Nti - AI & Software Engineer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                <ImageWithFallback
+                  src={photo}
+                  alt="Paul Nti - AI & Software Engineer"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                   
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent"></div>
