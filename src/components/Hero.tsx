@@ -2,7 +2,9 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-const photo = new URL('../images/2A7A1024.jpg', import.meta.url).href;
+// Use an explicit env-driven live URL (set `VITE_PROFILE_PHOTO` in Vercel)
+// Fallback to a placeholder if the env var is not provided.
+const photo = (import.meta.env as any).VITE_PROFILE_PHOTO ?? 'https://via.placeholder.com/800x800?text=Profile+Photo';
 
 export function Hero() {
   return (
