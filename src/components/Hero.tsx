@@ -2,12 +2,6 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-// Use an explicit env-driven live URL (set `VITE_PROFILE_PHOTO` in Vercel).
-// Fallback to the bundled local image so production builds still have a stable asset.
-const envPhoto = (import.meta.env as any).VITE_PROFILE_PHOTO;
-const photo = envPhoto && typeof envPhoto === 'string' && envPhoto.startsWith('http')
-  ? envPhoto
-  : new URL('../images/2A7A1024.jpg', import.meta.url).href;
 
 export function Hero() {
   return (
@@ -131,11 +125,11 @@ export function Hero() {
               {/* Main Image Container */}
               <div className="relative z-10 group">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm border-4 border-background/50 shadow-2xl">
-                <ImageWithFallback
-                  src={photo}
-                  alt="Paul Nti - AI & Software Engineer"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                  <ImageWithFallback
+                    src="/images/2A7A1024.jpg"
+                    alt="Paul Nti - Software and AI Engineer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                   
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent"></div>
