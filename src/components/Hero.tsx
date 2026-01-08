@@ -126,7 +126,7 @@ export function Hero() {
               <div className="relative z-10 group">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm border-4 border-background/50 shadow-2xl">
                   <ImageWithFallback
-                    src="/images/2A7A1024.jpg"
+                    src="https://unsplash.com/photos/cracked-human-head-sculpture-with-gold-kintsugi-repairs-nI0d850_UhQ"
                     alt="Paul Nti - Software and AI Engineer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
